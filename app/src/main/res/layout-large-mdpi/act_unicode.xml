@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="450dp"
+    
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_unicodecode"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="Unicode Print"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_unilay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/edt_unicode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Select Data"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/sp_SelectLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="20dp"
+      
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_unilay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/edt_unicode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:text="Select Justification"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/sp_SelectPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+       
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout123"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible" 
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/custom_edt"
+            android:layout_width="176dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+     
+            android:hint="Enter Text"
+            android:gravity="left"
+            android:layout_weight="1" 
+            android:paddingLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/custom_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+         
+            android:onClick="visible"
+            android:text="Confirm Data"
+            android:layout_marginLeft="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+       
+    <LinearLayout
+        android:id="@+id/linearLayout456"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center" >
+        <ScrollView
+    android:id="@+id/scrlvw"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center" 
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/tv_selectLang"
+            android:layout_width="297dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_unicodeprnttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+      
+        android:text="Print"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+       
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+
+    defaultConfig {
+        applicationId "com.esys.leopardimpdemoapp"
+        minSdkVersion 7
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    namespace 'com.esys.leopardimpdemoapp'
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:19.1.0'
+    implementation files('libs/ImageSupport-V1.5.jar')
+    implementation files('libs/LeopardProwessSdkV-1.1.6.jar')
+}
